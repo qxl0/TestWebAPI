@@ -1,0 +1,92 @@
+<table>
+  <col width="70%">
+  <col width="30%">
+  <tr align="center">
+    <td colspan="2">
+    <h3>Web API Tester</h3>
+    <hr style="background-color: white"/>
+    </td>
+  </tr>
+  <tr>
+    <td style="align-content: center">
+    <div class="col-md-12">
+      <form autocomplete="off">
+
+        <div  class="form-group">
+            <label>Environment:</label>
+            <select class="form-control"  (change)="selectItem($event.target.value)" [ngModel]="currentEnv" [ngModelOptions]="{standalone: true}">
+                <option *ngFor="let env of envs" [ngValue]="env" [selected]="env.envName===currentEnv.envName">{{env.envName}}</option>
+            </select>
+        </div>
+
+        <span class="form-group" >
+          <label for="userName">User Name:</label>
+          <input id="userName" type="text" class="form-control" (ngModel)="selectedUser" value={{currentEnv.user}} placeholder="User Name..." />
+        </span>
+        <span class="form-group" >
+          <label for="password">Password:</label>
+          <input id="password" type="text" class="form-control" (ngModel)="selectedPassword" value={{currentEnv.password}} placeholder="Password..." />
+        </span>
+        <div>
+            <label for="serverURL">Server URL:</label>
+            <input id="serverURL" type="text" class="form-control" value={{currentEnv.envServerUrl}} placeholder="Server URL..." />
+        </div>
+
+        <div class="form-group">
+          <label>Get Service Call:</label>
+          <div class="form-group">
+            <select class="form-control"  (change)="selectGetApi($event.target.value)" [(ngModel)]="selectedGetApi" [ngModelOptions]="{standalone: true}">
+                <option *ngFor="let getCall of getCallList" [value]="getCall" >{{getCall}}</option>
+            </select>
+        </div>
+        </div>
+
+
+        <div class="form-group">
+            <label>Post Service Call:</label>
+            <select class="form-control"  (change)="selectPostApi($event.target.value)" (ngModel)="selectedPostApi">
+                <option *ngFor="let postCall of postCallList" value={{postCall.url}}>{{postCall.url}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+              <label>Put Service Call:</label>
+              <select class="form-control"  (change)="selectItem($event.target.value)">
+                  <option *ngFor="let putCall of putCallList" value={{putCall.url}}>{{putCall.url}}</option>
+              </select>
+            </div>
+      </form>
+
+
+    </div>
+    </td>
+    <td style="align-content: center;">
+        <div class="form-group">
+            <button class="button button2" (click)="callGet()">Call GET</button>
+            <button class="button button2">Call POST</button>
+            <BUTTON class="button button2">Call PUT</BUTTON>
+        </div>
+    </td>
+  </tr>
+</table>
+
+<div class="form-group" style="margin: 15px;">
+  <label>Results:</label>
+  <span style="margin-left: 20px">
+  <mat-radio-group aria-label="Format" [(ngModel)]="displayFormat">
+    <mat-radio-button value="1">Json string</mat-radio-button>
+    <mat-radio-button value="2">Item List</mat-radio-button>
+    <mat-radio-button value="3">JSON View</mat-radio-button>
+  </mat-radio-group>
+</span>
+  <textarea *ngIf="displayFormat == '1'" [(ngModel)]="response" #txtResult class="form-control" rows="29"></textarea>
+  <div *ngIf="displayFormat == '2'" style="background-color: white; color:black">
+    <li *ngFor="let obj of responseInObj">{{obj | json}}</li>
+  </div>
+  <div *ngIf="displayFormat == '3'" style="background-color: white; color:black">
+    <ngx-json-viewer [json]="response"></ngx-json-viewer>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,20 @@
+{
+  "/securityCheck/*": {
+    "target": "http://ambd184es",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/securityCheck" : "http://ambd184es"
+    }
+  },
+  "/xxx/*": {
+    "target": "https://ambd184es.rd.allscripts.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/xxx" : "https://ambd184es.rd.allscripts.com"
+    }
+  }
+}
