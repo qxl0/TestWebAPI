@@ -79,7 +79,7 @@ const ENVS: IEnvironment[] = [
   }
 ]
 
-const GETAPIS: string[] = [
+const GETAPIS: any[] = [
   "/api/drugcatalog/fullcatalog/details?genericNameId=786&isHx=false&genericNameIDs=null&drugNameID=0&OBOUserId=",
   "/api/drugcatalog/therapeuticalternatives?genericNameId=786&genericItemId=4474&isGeneric=True&NDC=30014030312&FormularyListNumber=FSL107&CopayNumber=COP107&AlternativeListNumber=&PBMParticipantNumber=T00000000001010&CoverageNumber=COV107",
   "/api/drugcatalog/payerspecifiedalternatives?genericNameId=786&genericItemId=4474&isGeneric=True&NDC=30014030312&FormularyListNumber=FSL107&CopayNumber=COP107&AlternativeListNumber=&PBMParticipantNumber=T00000000001010&CoverageNumber=COV107",
@@ -110,27 +110,27 @@ const GETAPIS: string[] = [
 ]
 
 const POSTAPIS: any[] = [
-  {url: "api/prescription/2147501205/submit", body: "SubmitJson.json"},
-  {url: "api/prescription/2147503283/renew", body:  "Renew.json"},
-  {url: "api/prescription/unsubmitted", body: "RequestJSON.json"},
-  {url: "api/patient/172400200/mharequest", body: "EligibilityRequest.json"},
-  {url: "api/patient/160900200/eligibilitystatusrequest", body: "EligibilityRequest.json"},
-  {url: "api/prescription/homemedication", body:  "HomeMed.json"},
-  {url: "api/patient/172400200/eligibilitystatusrequest", body: "EligibilityRequest.json"},
-  {url: "api/prescription/2147497839/reprint",body:  "ReprintJson.json"},
-  {url: "api/cds/alerts", body: "cdsrequest.json"},
-  {url: "api/prescription/2842/denyrefill", body: "Denyrefill.json"},
-  {url: "api/prescription/1462/denyunknown", body: "DenyUnknow.json"},
-  {url: "api/prescription/validatesave", body: "RequestJSON.json"},
-  {url: "api/prescription/validate", body: "RequestJSON.json"},
-  {url: "api/enrollment/service/stop", body: "RequestJSON.json"},
-  {url: "api/patient/686600200/eligibilitystatusrequest",body: "Elegibility.json"},
-  {url: "api/patient/960100200/matchpatient",body: "RequestMatch.json"},
-  {url: "api/prescription/batchsubmit",body:  "BatchSubmit.json"},
-  {url: "api/prescription/51981/renew", body: "Renew.json"},
-  {url: "api/prescription/2147497391/renew", body: "RenewWAlerts.json"},
-  {url: "api/prescription/2147503491/refillrequest/approve", body: "approverefill.json"},
-  {url: "api/prescription/2147503701/refillrequest/approve", body: "approverefillMOB.json"}
+  {url: "/api/prescription/2147501205/submit", body: "SubmitJson.json"},
+  {url: "/api/prescription/2147503283/renew", body:  "Renew.json"},
+  {url: "/api/prescription/unsubmitted", body: "RequestJSON.json"},
+  {url: "/api/patient/172400200/mharequest", body: "EligibilityRequest.json"},
+  {url: "/api/patient/160900200/eligibilitystatusrequest", body: "EligibilityRequest.json"},
+  {url: "/api/prescription/homemedication", body:  "HomeMed.json"},
+  {url: "/api/patient/172400200/eligibilitystatusrequest", body: "EligibilityRequest.json"},
+  {url: "/api/prescription/2147497839/reprint",body:  "ReprintJson.json"},
+  {url: "/api/cds/alerts", body: "cdsrequest.json"},
+  {url: "/api/prescription/2842/denyrefill", body: "Denyrefill.json"},
+  {url: "/api/prescription/1462/denyunknown", body: "DenyUnknow.json"},
+  {url: "/api/prescription/validatesave", body: "RequestJSON.json"},
+  {url: "/api/prescription/validate", body: "RequestJSON.json"},
+  {url: "/api/enrollment/service/stop", body: "RequestJSON.json"},
+  {url: "/api/patient/686600200/eligibilitystatusrequest",body: "Elegibility.json"},
+  {url: "/api/patient/960100200/matchpatient",body: "RequestMatch.json"},
+  {url: "/api/prescription/batchsubmit",body:  "BatchSubmit.json"},
+  {url: "/api/prescription/2147512271/renew", body: "Renew.json"},
+  {url: "/api/prescription/2147512271/renew", body: "RenewWAlerts.json"},
+  {url: "/api/prescription/2147503491/refillrequest/approve", body: "approverefill.json"},
+  {url: "/api/prescription/2147503701/refillrequest/approve", body: "approverefillMOB.json"}
 ]
 
 const PUTAPIS: any[] = [

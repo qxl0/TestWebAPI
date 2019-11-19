@@ -1,0 +1,15 @@
+{
+  "State": 1,
+  "ApprovingScheduledDrug": false,
+  "ClientGuid": 173400200,
+  "ChartGuid": 186000170,
+  "VisitGuid": 185700270,
+  "RenewType": 2,
+  "IsNonPrescriber": false,
+  "CurrentUserGUID": 416301190,
+  "CareProviderGUID": 416301190,
+  "Refills": 3,
+  "DenialReason": "Refill Not Appropiate",
+  "DenialReasonCode": "AG",
+  "Tokens": null
+}

@@ -1,0 +1,19 @@
+{
+  "PatientGUID": 24000200,
+  "Prescriptions": [
+    {
+      "PrescriptionID": 2147497418,
+      "PharmacyGUID": null,
+      "SelectedProviderLocationGUID": null,
+      "SupervisorGUID": null,
+      "SelectedSubmitMethod": 4
+    }
+  ],
+  "HandleTransmissionError": true,
+  "Tokens": {
+    "IdpToken": null,
+    "AuthZToken": null,
+    "OTPToken": null,
+    "CorrelationID": "00000000-0000-0000-0000-000000000000"
+  }
+}

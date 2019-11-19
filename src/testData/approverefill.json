@@ -1,0 +1,17 @@
+{
+  "State": 0,
+  "ClientGuid": 960100200,
+  "ChartGuid": 761800170,
+  "VisitGuid": 776700270,
+  "RenewType": 2,
+  "IsNonPrescriber": false,
+  "CurrentUserGUID": 945301190,
+  "CareProviderGUID": 945301190,
+  "NoteToPharmacy": " Jose test1",
+  "Tokens": null,
+  "Refills": "1",
+  "DenialReason": null,
+  "DenialReasonCode": null,
+  "PrescriptionInfo": null,
+  "HealthIssues": null
+}

@@ -1,0 +1,59 @@
+{
+  "ClientGuid": 20400200,
+  "ChartGuid": 742500170,
+  "VisitGuid": 757100270,
+  "Refills": "1",
+  "NoteToPharmacy": "NNNNNNNoooooottttttssssss",
+  "Tokens": {
+    "IdpToken": null,
+    "AuthZToken": null,
+    "OTPToken": null,
+    "CorrelationID": "00000000-0000-0000-0000-000000000000"
+  },
+  "HealthIssues": [
+    {
+      "Codeset": "ICD-10-CM",
+      "IsValid": true,
+      "ShortName": "G43.D0 Abdominal migraine, not intractable",
+      "PrescriptionID": 0,
+      "ICD9Code": "346.20",
+      "ICD10Code": "G43.D0",
+      "HealthIssueGUID": 1134900500,
+      "HealthIssueDescription": null,
+      "ViewRights": [
+        "13501040",
+        "12801040",
+        "12101040",
+        "14201040"
+      ],
+      "IssueDescription": "Abdominal migraine, not intractable",
+      "Code": "G43.D0",
+      "TypeCode": "ICD10",
+      "VMLinkCode": "ICD-10-CM",
+      "IcdCode": ""
+    },
+    {
+      "Codeset": "ICD-10-CM",
+      "IsValid": true,
+      "ShortName": "R07.9 Chest pain",
+      "PrescriptionID": 0,
+      "ICD9Code": "786.50",
+      "ICD10Code": "R07.9",
+      "HealthIssueGUID": 660300500,
+      "HealthIssueDescription": null,
+      "ViewRights": [
+        "13701040",
+        "13001040",
+        "12301040",
+        "14401040"
+      ],
+      "IssueDescription": "Chest pain",
+      "Code": "R07.9",
+      "TypeCode": "ICD10",
+      "VMLinkCode": "ICD-10-CM",
+      "IcdCode": ""
+    }
+  ],
+  "QuantityAmount": null,
+  "DurationAmount": null
+}

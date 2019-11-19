@@ -1,0 +1,13 @@
+{
+  "handleTransmissionError": true,
+  "tokens": {
+    "idpToken": "string",
+    "authZToken": "string",
+    "otpToken": "string",
+    "correlationID": "string"
+  },
+  "pharmacyGUID": 0,
+  "selectedProviderLocationGUID": 0,
+  "supervisorGUID": 0,
+  "selectedSubmitMethod": 5
+}

@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
 ## Development server
-
+##  "start": "node --max-http-header-size=100000 ./node_modules/@angular/cli/bin/ng serve --proxy-config proxy.conf.json",
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
